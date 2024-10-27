@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm hover:shadow;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 shadow-sm hover:shadow;
+  }
+}
+
+@layer utilities {
+  .shadow-card {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+}
